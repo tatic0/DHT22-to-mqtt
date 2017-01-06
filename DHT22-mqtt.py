@@ -16,7 +16,7 @@ def on_connect(client, userdata, flags, rc):
 # How long to wait (in seconds) between measurements.
 client = paho.Client()
 client.on_connect = on_connect
-client.connect("bike.dragon-tortuga.net", 1883)
+client.connect("mqtt.broker.your", 1883)
 client.loop_start()
 
 freq = 600  # refresh 10 min
